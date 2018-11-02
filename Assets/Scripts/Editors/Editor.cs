@@ -10,7 +10,7 @@ namespace Editors {
 		protected T[,,] objs;
 		public Toggle overWriteToggle;
 		protected bool overwriteData;
-			
+				
 
 		//info for preview
 		public GameObject[] previewObj;

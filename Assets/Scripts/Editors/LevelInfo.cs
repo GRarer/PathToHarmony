@@ -9,18 +9,11 @@ namespace Editors {
 	public class LevelInfo {
 		public Stack<UnitInfo> units;
 		public string mapName;
-		public ObjectiveType objective;
-		public List<Coord> goalPositions;
+		//public Stack<Tile>[,] tiles;
 
-		public LevelInfo(Stack<UnitInfo> units, string name, ObjectiveType objective) {
+		public LevelInfo(Stack<UnitInfo> units, string name) {
 			this.units = units;
 			this.mapName = name;
-			this.objective = objective;
-		}
-
-		public void setGoalPositions(List<Coord> pos)
-		{
-			goalPositions = pos;
 		}
 	}
 }
