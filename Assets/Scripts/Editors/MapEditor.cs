@@ -177,7 +177,7 @@ namespace Editors {
 
 		public void deserializeTiles() {
 		
-			string mapData = Serialization.ReadData(loadFileText.text, PathManager.mapsPath());
+			string mapData = Serialization.ReadData(loadFileText.text, mapFilePath);
 			if (mapData != null)
 			{
 				updateMapName(loadFileText.text);
@@ -258,7 +258,7 @@ namespace Editors {
 				}
 			}
 
-			Serialization.WriteData(serialized.ToString(), mapName, PathManager.mapsPath(), overwriteData);
+			Serialization.WriteData(serialized.ToString(), mapName, mapFilePath, overwriteData);
 		}
 
 		public void updateSizeUI() {

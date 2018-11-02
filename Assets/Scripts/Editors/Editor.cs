@@ -10,7 +10,10 @@ namespace Editors {
 		protected T[,,] objs;
 		public Toggle overWriteToggle;
 		protected bool overwriteData;
-				
+		protected string mapFilePath = Serialization.mapFilePath;
+		protected string levelFilePath = Serialization.levelFilePath;
+
+		
 
 		//info for preview
 		public GameObject[] previewObj;

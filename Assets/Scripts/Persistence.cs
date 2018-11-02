@@ -12,7 +12,8 @@ public static class Persistance {
 	private const string CAMPAIGN_LEVEL_INDEX = "campaignLevelIndex";
 
 
-	
+	public static string streamingPath {get; set;}
+
 
 	public static void saveProgress() {
 		PlayerPrefs.SetInt(CAMPAIGN_LEVEL_INDEX, campaign.levelIndex);
